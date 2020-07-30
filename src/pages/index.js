@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
+import TwitterHook from "../components/twitterhook"
+import Adcard from "../components/adcard"
+
+import {StyledArticle} from "../components/index.styled"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -13,33 +15,25 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
+      <Adcard />
+      <div>
+        <h2>Latest Gists</h2>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
+          <StyledArticle key={node.fields.slug}>
+            <div><img src={node.frontmatter.hero.childImageSharp.fluid.src} alt="jhgkh" width="100" height="100"/></div>
+
+              <div>
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
+              </div>
+          </StyledArticle>
         )
       })}
+      </div>
+      <TwitterHook />
     </Layout>
   )
 }
@@ -53,7 +47,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+    ) {
       edges {
         node {
           excerpt
@@ -61,9 +58,16 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            hero {
+              absolutePath
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }

@@ -1,0 +1,37 @@
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  border: none;
+  cursor: pointer;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px rgb(58, 56, 56);
+}
+
+summary::marker {
+  color: rgb(17, 4, 4);
+}
+
+summary::-webkit-details-marker {
+  color: rgb(17, 4, 4);
+}
+
+summary {
+  display: list-item;
+}
+
+.blue {
+  color: rgb(0, 102, 255);
+}
+
+.yellow {
+  color: rgb(136, 136, 35);
+}
+.binge{
+    color: #a02d0a
+}
+
