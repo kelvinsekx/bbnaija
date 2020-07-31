@@ -22,7 +22,7 @@ function Footer() {
           <summary>Privacy</summary>
           <p>
             Aside the use of few google analytics tricks, we do not collect any
-            information be it name gmail not to mention tracking your previous
+            information be it name, gmail not to mention tracking your previous
             activities online.
           </p>
           <p>

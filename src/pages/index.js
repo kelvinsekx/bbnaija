@@ -4,18 +4,31 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import TwitterHook from "../components/twitterhook"
 import Adcard from "../components/adcard"
+import MatesCard from "../components/matescard"
 
-import {StyledArticle} from "../components/index.styled"
+
+
+import {StyledArticle, MatesCardWrapper} from "../components/index.styled"
 import SEO from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ data, location, theme}) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+      <div >
+        <div style={{padding:'1em', border:'1px wavvy red'}}>In-House</div>
+        <MatesCardWrapper>
+          <MatesCard theme = {theme}/>
+        </MatesCardWrapper>
+      </div>
+
+      <div style={{margin: '2em 0'}}>
+        <p>Bill Board</p>
       <Adcard />
+      </div>
       <div>
         <h2>Latest Gists</h2>
       {posts.map(({ node }) => {

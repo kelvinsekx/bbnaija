@@ -25,17 +25,11 @@ const Layout = ({ location, title, children }) => {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          width: '50vw'
-        }}
-      >
+      <div className="container">
         <NavHeader 
         theme={theme} 
         toggleTheme={toggleTheme} />
-        <main>{children}</main>
+        <main theme={theme}>{children}</main>
         <Footer />
       </div>
     </ThemeProvider>

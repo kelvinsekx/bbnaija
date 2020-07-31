@@ -30,8 +30,72 @@ align-items: center;
 justify-content: space-between;
 `
 
-export const GridContainer = styled.div`
-display: grid;
-grid-template-column: 100px 50px 50px 100px;
+export const EnterLeftWrapper = styled.article`
+display: flex;
+justify-content: space-between;
+`
 
+export const LateralColumn = styled.article`
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+`
+
+
+export const GridContainer = styled.div`
+height: 12rem;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-gap: 0.5em;
+grid-template-areas: "cellOne cellTwo cellThree"
+                     "cellOne cellTwo cellThree"
+                     "cellOne cellFour cellFour"
+                     "cellOne cellFour cellFour"
+`
+
+export const GridCellOne = styled.div`
+color: red;
+background-color: #125689;
+grid-area: cellOne;
+`
+export const GridCellTwo = styled.div`
+color: white;
+background-color: #018090;
+grid-area: cellTwo;
+`
+export const GridCellThree = styled.div`
+color: white;
+background-color: #018090;
+grid-area: cellThree;
+`
+export const GridCellFour = styled.div`
+color: white;
+background-color: #018090;
+grid-area: cellFour;
+`
+
+
+export const MatesCardWrapper = styled.div`
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+// border: 2px solid red;
+`
+
+export const ImageCover = styled.div`
+width: 10rem;  
+border: 0.6px solid #444; 
+margin: 0.2em; 
+border-radius: 0.5em;
+@media (max-width: 768px) {
+    width: 8.5rem;
+  }
+`
+
+export const Entered = styled.span`
+  color: #108830;
+`
+
+export const Left = styled.span`
+  color: ${({theme})=>theme.left}
 `

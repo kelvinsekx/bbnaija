@@ -15,7 +15,7 @@ function Header({theme, toggleTheme}){
                 <Toggler 
                 theme={theme} 
                 toggleTheme= {toggleTheme} />
-                <div>Octopus</div>
+                <div><Link to="/octopus" className="to">Octopus</Link></div>
             </StyledFlexRow>
         </StyledNav>
     )
