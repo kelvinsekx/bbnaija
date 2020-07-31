@@ -1,13 +1,15 @@
 import React from 'react'
 
+import {LogoSpan} from "./index.styled"
+
 function Logo(){
     return (
-        <span style={{color:'#098765', fontSize: "1em"}}>
+        <LogoSpan>
             <span className="binge">B</span>
             <span className="binge">B</span>NAIJA
             <span className="yellow">O</span>CTOPU
             <span>S</span>
-        </span>
+        </LogoSpan>
     )
 }
 

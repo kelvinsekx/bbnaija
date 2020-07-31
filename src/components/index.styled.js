@@ -41,6 +41,14 @@ export const LateralColumn = styled.article`
   width: 47%;
 `
 
+export const LogoSpan = styled.span`
+  color: #098765;
+ font-size: 1.6em;
+ @media (max-width: 768px) {
+  font-size: 1.2em;
+}
+`
+
 
 export const GridContainer = styled.div`
 height: 12rem;
