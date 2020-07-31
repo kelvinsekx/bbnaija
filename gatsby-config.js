@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `BBNAIJAOCTOPUS`,
     author: {
-      name: `Ukuejubola Kelvin`,
+      name: `Ola Kelvin`,
       summary: `who spends a little time sharing fun with co-bbnaija fans.`,
     },
     description: `A starter blog for BBNAIJA fun.`,
