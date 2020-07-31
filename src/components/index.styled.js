@@ -57,8 +57,7 @@ grid-template-columns: 1fr 2fr;
 grid-gap: 0.5em;
 grid-template-areas: "cellOne cellTwo cellThree"
                      "cellOne cellTwo cellThree"
-                     "cellOne cellFour cellFour"
-                     "cellOne cellFour cellFour"
+                     "cellOne cellFour cellFive"
 `
 
 export const GridCellOne = styled.div`
@@ -80,6 +79,12 @@ export const GridCellFour = styled.div`
 color: white;
 background-color: #018090;
 grid-area: cellFour;
+`
+
+export const GridCellFive = styled.div`
+color: white;
+background-color: #018090;
+grid-area: cellFive;
 `
 
 

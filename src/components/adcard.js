@@ -6,26 +6,31 @@ import {
   GridCellTwo,
   GridCellThree,
   GridCellFour,
+  GridCellFive,
 } from "./index.styled"
 
 const AdcardOne = () => {
-  return (<GridCellOne>div-one</GridCellOne>)
+  return (<GridCellOne>ad space is available</GridCellOne>)
 }
 
 const AdcardTwo = () => {
   return (
-    <GridCellTwo>div-two</GridCellTwo>
+    <GridCellTwo>ad space is available</GridCellTwo>
   )
 }
 const AdcardThree = () => {
   return (
     <GridCellThree >
-      div-two
+      ad space is available
     </GridCellThree>
   )
 }
 const AdcardFour = () => {
-  return (<GridCellFour>div-two</GridCellFour>)
+  return (<GridCellFour>ad space is available</GridCellFour>)
+}
+
+const AdcardFive = () => {
+  return (<GridCellFive>ad space is available</GridCellFive>)
 }
 
 export default function Adcard() {
@@ -35,6 +40,7 @@ export default function Adcard() {
       <AdcardTwo />
       <AdcardThree />
       <AdcardFour />
+      <AdcardFive />
     </GridContainer>
   )
 }
