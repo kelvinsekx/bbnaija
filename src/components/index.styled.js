@@ -5,13 +5,14 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
+margin-top: 0.3em;
 `
 export const StyledFlexRow = styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
 div{
-    margin: 0 0.6em;
+    margin: 0 0.75em;
 }
 `
 
@@ -35,10 +36,17 @@ display: flex;
 justify-content: space-between;
 `
 
-export const LateralColumn = styled.article`
+export const LateralColumn = styled.div`
   display: flex;
   flex-direction: column;
   width: 47%;
+`
+
+export const LateralColumnFlexEnd = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  align-items: flex-end;
 `
 
 export const LogoSpan = styled.span`
@@ -103,6 +111,9 @@ border-radius: 0.5em;
 @media (max-width: 768px) {
     width: 8.5rem;
   }
+@media (max-width: 468px) {
+    width: 5.93rem;
+  }
 `
 
 export const Entered = styled.span`
@@ -111,4 +122,12 @@ export const Entered = styled.span`
 
 export const Left = styled.span`
   color: ${({theme})=>theme.left}
+`
+
+export const LilSpan = styled.span`
+  color: #555555;
+`
+
+export const BigSpan = styled.span`
+  font-weight: bold;
 `

@@ -6,8 +6,6 @@ import TwitterHook from "../components/twitterhook"
 import Adcard from "../components/adcard"
 import MatesCard from "../components/matescard"
 
-
-
 import {StyledArticle, MatesCardWrapper} from "../components/index.styled"
 import SEO from "../components/seo"
 
@@ -17,7 +15,8 @@ const BlogIndex = ({ data, location, theme}) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Welcome..." />
+
       <div >
         <div style={{padding:'1em', border:'1px wavvy red'}}>In-House</div>
         <MatesCardWrapper>
@@ -27,8 +26,9 @@ const BlogIndex = ({ data, location, theme}) => {
 
       <div style={{margin: '2em 0'}}>
         <p>Bill Board</p>
-      <Adcard />
+        <Adcard />
       </div>
+
       <div>
         <h2>Latest Gists</h2>
       {posts.map(({ node }) => {
