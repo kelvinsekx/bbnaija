@@ -217,6 +217,7 @@ function MatesCard({ theme }) {
     {
       name: "Lilo",
       image: data.image9.childImageSharp.fluid,
+      left: "02.08"
     },
     {
       name: "Lucy",
@@ -267,20 +268,20 @@ function MatesCard({ theme }) {
   return (
     <>
       {array.map(each => (
-        <ImageCover>
+        <ImageCover theme={theme}>
           <div>
             <div>
-              <BigSpan>{each.name}</BigSpan>
+              <BigSpan theme={theme}>{each.name}</BigSpan>
             </div>
             <Img fluid={each.image} />
             <EnterLeftWrapper>
               <LateralColumn>
-                <Entered>In</Entered>
+                <Entered theme={theme}>In</Entered>
                 <LilSpan>19.07</LilSpan>
               </LateralColumn>
               <LateralColumnFlexEnd>
                 <Left theme={theme}>Out</Left>
-                <LilSpan>?</LilSpan>
+               <LilSpan>{each.left ? each.left : `?`}</LilSpan>
               </LateralColumnFlexEnd>
             </EnterLeftWrapper>
           </div>

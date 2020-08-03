@@ -105,19 +105,20 @@ flex-direction: row;
 
 export const ImageCover = styled.div`
 width: 10rem;  
-border: 0.6px solid #444; 
+border: 0.6px solid ${({theme}) => theme.imgBorder}; 
 margin: 0.2em; 
 border-radius: 0.5em;
+box-shadow: 2px 2.4px 2px ${({theme}) => theme.shadow};
 @media (max-width: 768px) {
     width: 8.5rem;
   }
 @media (max-width: 468px) {
-    width: 5.93rem;
+    width: 6.57rem;
   }
 `
 
 export const Entered = styled.span`
-  color: #108830;
+  color: ${({theme})=>theme.entered}
 `
 
 export const Left = styled.span`
@@ -129,5 +130,5 @@ export const LilSpan = styled.span`
 `
 
 export const BigSpan = styled.span`
-  font-weight: bold;
+  font-weight: ${({theme})=>theme.spanweight};
 `

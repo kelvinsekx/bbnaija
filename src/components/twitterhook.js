@@ -7,7 +7,7 @@ export default function TwitterHook() {
     <div style={{ marginBottom: "3.5rem", marginTop: "3.5rem" }}>
       <StyledHookFlex>
         <div>Join Our Poll on</div>
-        <div>Twitter</div>
+        <div><a href="https://twitter.com/bbnaijaoctopus">Twitter</a></div>
       </StyledHookFlex>
     </div>
   )
