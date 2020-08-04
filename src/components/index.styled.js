@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { device } from "./device"
 
 export const StyledNav = styled.nav`
 display: flex;
@@ -109,12 +110,37 @@ border: 0.6px solid ${({theme}) => theme.imgBorder};
 margin: 0.2em; 
 border-radius: 0.5em;
 box-shadow: 2px 2.4px 2px ${({theme}) => theme.shadow};
-@media (max-width: 768px) {
-    width: 8.5rem;
+@media ${device.mobileXXS} {
+  width: 5.12rem;
+}
+@media ${device.mobileXS} {
+  width: 5.2rem;
+}
+@media ${device.mobileS} {
+    width: 5.9rem;
   }
-@media (max-width: 468px) {
-    width: 6.57rem;
+  @media ${device.mobileS_M} {
+    width: 6.7rem;
   }
+  @media ${device.mobileM} {
+    width: 7.0rem;
+  }
+  @media ${device.mobileSM} {
+    width: 7.4rem;
+  }
+  @media ${device.mobileL} {
+    width: 7.9rem;
+  }
+  @media ${device.tablet} {
+    width: 10.3rem;
+  }
+  @media ${device.laptop} {
+    width: 10.5rem;
+  }
+  @media ${device.laptopM} {
+    width: 10.9rem;
+  }
+
 `
 
 export const Entered = styled.span`
