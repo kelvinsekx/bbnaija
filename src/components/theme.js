@@ -10,7 +10,8 @@ export const lightTheme = {
     entered: '#108830',
     spanweight: 'bold',
     shadow: 'rgb(184, 175, 175)',
-    imgBorder: '#777'
+    imgBorder: '#777',
+    loader: "#fff"
   }
   
   export const darkTheme = {
@@ -22,5 +23,6 @@ export const lightTheme = {
     entered: 'pink',
     spanweight: '340',
     shadow: '#565656',
-    imgBorder:'#111'
+    imgBorder:'#111',
+    loader: "#000"
   }

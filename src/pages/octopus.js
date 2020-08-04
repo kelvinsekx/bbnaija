@@ -1,15 +1,20 @@
 import React from "react"
 
+import OctopusCard from "../components/octopus";
+import {  MatesCardWrapper } from "../components/index.styled"
+
 import Layout from "../components/layout"
 
 function Octopus() {
   return (
     <Layout>
       <div>
-        <p>Octopus</p>
-        <div>Few Images</div>
+        <h1>Octopus Pick</h1>
+        <MatesCardWrapper>
+          <OctopusCard />
+        </MatesCardWrapper>
         <div>
-            <p>Your time is UP...</p>
+            <h3>Your time is UP...</h3>
             <p>tHE sadness...leave our house</p>
         </div>
       </div>
@@ -17,4 +22,4 @@ function Octopus() {
   )
 }
 
-export default Octopus
+export default Octopus;

@@ -4,6 +4,7 @@ import React from "react"
 import "./layout.css"
 
 import { ThemeProvider } from "styled-components";
+
 import {useDarkMode} from './useDarkMode'
 import { lightTheme, darkTheme } from "./theme"
 import { GlobalStyles } from "./global"

@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location, theme }) => {
         <InHouseIconWrapper>
           <span>In-House</span>{" "}
           <span>
-            <Emoji style={{ width: "4em", height: "auto" }} />
+            <Emoji style={{ width: "3em", height: "auto" }} />
           </span>
         </InHouseIconWrapper>
         <MatesCardWrapper>
