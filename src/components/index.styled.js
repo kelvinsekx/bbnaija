@@ -132,13 +132,13 @@ box-shadow: 2px 2.4px 2px ${({theme}) => theme.shadow};
     width: 7.9rem;
   }
   @media ${device.tablet} {
-    width: 10.3rem;
+    width: 10.01rem;
   }
   @media ${device.laptop} {
-    width: 10.5rem;
+    width: 10.10rem;
   }
   @media ${device.laptopM} {
-    width: 10.9rem;
+    width: 10.15rem;
   }
 
 `
