@@ -35,7 +35,7 @@ function Footer() {
         <details>
           <summary>How To Win</summary>
           <p>
-            Visit the octopus page on this website, see the three exiters for the week.
+            Visit the <Link to="/octopus">octopus page</Link> on this website, see the three exiters for the week.
           </p>
           <p>
             Move to the octopus twitter page, you will see the vote tweet...then vote.

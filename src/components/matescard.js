@@ -20,7 +20,8 @@ function MatesCard({ theme }) {
       query {
         image1: file(relativePath: { eq: "Erica.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -28,7 +29,8 @@ function MatesCard({ theme }) {
 
         image2: file(relativePath: { eq: "Eric.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -36,7 +38,8 @@ function MatesCard({ theme }) {
 
         image3: file(relativePath: { eq: "Dorathy.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -44,7 +47,8 @@ function MatesCard({ theme }) {
 
         image4: file(relativePath: { eq: "Brighto.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -52,7 +56,8 @@ function MatesCard({ theme }) {
 
         image5: file(relativePath: { eq: "Ka3na.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -60,7 +65,8 @@ function MatesCard({ theme }) {
 
         image6: file(relativePath: { eq: "Kaisha.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -68,7 +74,8 @@ function MatesCard({ theme }) {
 
         image7: file(relativePath: { eq: "Kiddwaya.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -76,7 +83,8 @@ function MatesCard({ theme }) {
 
         image8: file(relativePath: { eq: "Laycon.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -84,7 +92,8 @@ function MatesCard({ theme }) {
 
         image9: file(relativePath: { eq: "Lilo.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -92,7 +101,8 @@ function MatesCard({ theme }) {
 
         image10: file(relativePath: { eq: "Lucy.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -100,7 +110,8 @@ function MatesCard({ theme }) {
 
         image11: file(relativePath: { eq: "Nengi.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -109,6 +120,7 @@ function MatesCard({ theme }) {
         image12: file(relativePath: { eq: "Neo.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -117,6 +129,7 @@ function MatesCard({ theme }) {
         image13: file(relativePath: { eq: "Ozo.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -125,6 +138,7 @@ function MatesCard({ theme }) {
         image14: file(relativePath: { eq: "Praise.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -133,6 +147,7 @@ function MatesCard({ theme }) {
         image15: file(relativePath: { eq: "Prince.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -141,6 +156,7 @@ function MatesCard({ theme }) {
         image16: file(relativePath: { eq: "Tochi.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -157,6 +173,7 @@ function MatesCard({ theme }) {
         image18: file(relativePath: { eq: "TrickyTee.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -165,6 +182,7 @@ function MatesCard({ theme }) {
         image19: file(relativePath: { eq: "Vee.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
@@ -173,6 +191,7 @@ function MatesCard({ theme }) {
         image20: file(relativePath: { eq: "Wathoni.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
+              tracedSVG
               ...GatsbyImageSharpFluid
             }
           }
