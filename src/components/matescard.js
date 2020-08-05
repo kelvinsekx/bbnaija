@@ -20,7 +20,7 @@ function MatesCard({ theme }) {
       query {
         image1: file(relativePath: { eq: "Erica.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -29,7 +29,7 @@ function MatesCard({ theme }) {
 
         image2: file(relativePath: { eq: "Eric.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG ) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -38,7 +38,7 @@ function MatesCard({ theme }) {
 
         image3: file(relativePath: { eq: "Dorathy.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -56,7 +56,7 @@ function MatesCard({ theme }) {
 
         image5: file(relativePath: { eq: "Ka3na.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -74,7 +74,7 @@ function MatesCard({ theme }) {
 
         image7: file(relativePath: { eq: "Kiddwaya.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -83,7 +83,7 @@ function MatesCard({ theme }) {
 
         image8: file(relativePath: { eq: "Laycon.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -101,7 +101,7 @@ function MatesCard({ theme }) {
 
         image10: file(relativePath: { eq: "Lucy.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG) {
+            fluid(maxWidth: 190, maxHeight: 190, toFormat: PNG, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -119,7 +119,7 @@ function MatesCard({ theme }) {
 
         image12: file(relativePath: { eq: "Neo.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -137,7 +137,7 @@ function MatesCard({ theme }) {
 
         image14: file(relativePath: { eq: "Praise.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -155,7 +155,7 @@ function MatesCard({ theme }) {
 
         image16: file(relativePath: { eq: "Tochi.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -164,7 +164,7 @@ function MatesCard({ theme }) {
 
         image17: file(relativePath: { eq: "Tolanibaj.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -172,7 +172,7 @@ function MatesCard({ theme }) {
 
         image18: file(relativePath: { eq: "TrickyTee.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
@@ -190,7 +190,7 @@ function MatesCard({ theme }) {
 
         image20: file(relativePath: { eq: "Wathoni.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 190, maxHeight: 190) {
+            fluid(maxWidth: 190, maxHeight: 190, quality: 100, traceSVG: {color: "rgb(56, 47, 92)", threshold: 75}) {
               tracedSVG
               ...GatsbyImageSharpFluid
             }
