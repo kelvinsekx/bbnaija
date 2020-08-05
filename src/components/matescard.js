@@ -201,6 +201,7 @@ function MatesCard({ theme }) {
     {
       name: "Ka3na",
       image: data.image5.childImageSharp.fluid,
+      left: "02.08",
     },
     {
       name: "Kaisha",
@@ -272,6 +273,7 @@ function MatesCard({ theme }) {
           <div>
             <div>
               <BigSpan theme={theme}>{each.name}</BigSpan>
+              <span>{each.left ? <span style={{color: 'red'}}>&times;</span> : ``}</span>
             </div>
             <Img fluid={each.image} />
             <EnterLeftWrapper>

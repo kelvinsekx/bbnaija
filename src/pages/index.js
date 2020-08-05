@@ -40,6 +40,7 @@ const BlogIndex = ({ data, location, theme }) => {
 
       <div>
         <h2>Latest Gists</h2>
+        <div>Loading...</div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -78,7 +79,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 5
+      limit: 0
     ) {
       edges {
         node {
