@@ -1,5 +1,7 @@
 import React from "react"
 
+import {Link} from "gatsby"
+
 function Footer() {
   return (
     <footer>
@@ -12,8 +14,8 @@ function Footer() {
           </p>
           <p>
             It is a fun project by kelvin together with some {" "}
-            <span className="blue">asewome</span> {" "}
-            <span className="yellow">people</span>.
+            <Link to="/awesomepeople"><span className="blue">asewome</span> {" "}
+            <span className="yellow">people</span></Link>.
           </p>
           <p>Tho...you can send a DM on twitter to join the list of awesome People. We will LOVE you.</p>
         </details>
@@ -28,6 +30,19 @@ function Footer() {
           <p>
             BBNAIJAOCTOPUS is just a safe place for BBNAIJA fans to have fun and
             get rewarded for their BBNAIJA passion.
+          </p>
+        </details>
+        <details>
+          <summary>How To Win</summary>
+          <p>
+            Visit the octopus page on this website, see the three exiters for the week.
+          </p>
+          <p>
+            Move to the octopus twitter page, you will see the vote tweet...then vote.
+          </p>
+          <p>
+            If your vote matches who leaves the house, you stand a chance together with other three voters to get gift from our <Link to="/awesomepeople"><span className="blue">asewome</span> {" "}
+            <span className="yellow">people</span></Link>.
           </p>
         </details>
         <hr />
