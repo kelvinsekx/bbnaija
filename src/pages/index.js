@@ -22,11 +22,11 @@ const BlogIndex = ({ data, location, theme }) => {
       <SEO title="Welcome..." />
 
       <div>
-        <div style={{margin: "10px"}}>
+        <div style={{margin: "15px 0"}}>
         <InHouseIconWrapper>
           <span>In-House</span>{" "}
-          <span>
-            <Emoji style={{ width: "3em", height: "auto" }} />
+          <span style={{ width: "3em", height: "3em" }}>
+            <Emoji style={{ width: "100%", height: "100%" }} />
           </span>
         </InHouseIconWrapper>
         </div>
