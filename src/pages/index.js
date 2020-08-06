@@ -22,12 +22,14 @@ const BlogIndex = ({ data, location, theme }) => {
       <SEO title="Welcome..." />
 
       <div>
+        <div style={{margin: "10px"}}>
         <InHouseIconWrapper>
           <span>In-House</span>{" "}
           <span>
             <Emoji style={{ width: "3em", height: "auto" }} />
           </span>
         </InHouseIconWrapper>
+        </div>
         <MatesCardWrapper>
           <MatesCard theme={theme} />
         </MatesCardWrapper>

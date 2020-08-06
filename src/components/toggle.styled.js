@@ -39,6 +39,5 @@ height: 2rem;
 export const InHouseIconWrapper = styled.div`
 display: flex;
 font-weight: bold;
-margin: 5% 0;
 align-items: center;
 `
