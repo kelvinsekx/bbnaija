@@ -41,7 +41,7 @@ function Footer() {
             Move to the octopus twitter page, you will see the vote tweet...then vote.
           </p>
           <p>
-            If your vote matches who leaves the house, you stand a chance together with other three voters to get gift from our <Link to="/awesomepeople"><span className="blue">asewome</span> {" "}
+            If your vote matches who leaves the house, you stand a chance together with other three voters to get gift from our <Link to="/awesomepeople"><span className="blue">awesome</span> {" "}
             <span className="yellow">people</span></Link>.
           </p>
         </details>
