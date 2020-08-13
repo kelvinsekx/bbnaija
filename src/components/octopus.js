@@ -12,7 +12,7 @@ function MatesCard({ theme }) {
   const data = useStaticQuery(
     graphql`
       query {
-        image1: file(relativePath: { eq: "Tochi.jpg" }) {
+        image1: file(relativePath: { eq: "Prince.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
               ...GatsbyImageSharpFluid
@@ -20,7 +20,7 @@ function MatesCard({ theme }) {
           }
         }
 
-        image2: file(relativePath: { eq: "Eric.jpg" }) {
+        image2: file(relativePath: { eq: "Tolanibaj.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
               ...GatsbyImageSharpFluid
@@ -28,7 +28,7 @@ function MatesCard({ theme }) {
           }
         }
 
-        image3: file(relativePath: { eq: "Tolanibaj.jpg" }) {
+        image3: file(relativePath: { eq: "Wathoni.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 190, maxHeight: 190) {
               ...GatsbyImageSharpFluid
@@ -41,17 +41,17 @@ function MatesCard({ theme }) {
 
   const array = [
     {
-      name: "Tochi",
+      name: "Prince",
       image: data.image1.childImageSharp.fluid,
       cont: "Exiter 1",
     },
     {
-      name: "Eric",
+      name: "Tolanibaj",
       image: data.image2.childImageSharp.fluid,
       cont: "Exiter 2",
     },
     {
-      name: "Tolanibaj",
+      name: "Wathoni",
       image: data.image3.childImageSharp.fluid,
       cont: "Exiter 3",
     },

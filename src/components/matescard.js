@@ -208,6 +208,7 @@ function MatesCard({ theme }) {
     {
       name: "Eric",
       image: data.image2.childImageSharp.fluid,
+      left: "09.08",
     },
     {
       name: "Dorathy",
@@ -266,6 +267,7 @@ function MatesCard({ theme }) {
     {
       name: "Tochi",
       image: data.image16.childImageSharp.fluid,
+      left: "09.08",
     },
     {
       name: "Tolanibaj",
